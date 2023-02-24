@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:reusable_widgets_flutter/text/CTextStyle.dart';
+
+import '../text/CTextStyle.dart';
 
 class CText extends StatelessWidget {
   final String text;

@@ -24,5 +24,9 @@ extension ColorExtension on String {
   }
 }
 
+Color colorPrimary = Colors.lightBlue;
+Color colorSecondary = Colors.blue.shade100;
 Color colorText = Colors.black;
+Color colorError = Colors.red;
+Color colorSuccess = Colors.green;
 
