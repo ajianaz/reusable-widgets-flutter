@@ -39,29 +39,3 @@ class CButtonStyle {
     );
   }
 }
-
-// ButtonStyle styleButtonFilled = ElevatedButton.styleFrom(
-//   shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20.0)),
-//   minimumSize: Size.fromHeight(40),
-//   primary: colorPrimary,
-//   onPrimary: colorPrimary,
-//   elevation: 0,
-// );
-//
-// ButtonStyle styleButtonFilledBoxSmall = ElevatedButton.styleFrom(
-//   shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(5)),
-//   primary: colorPrimary,
-//   onPrimary: colorPrimary,
-//   elevation: 0,
-// );
-//
-// ButtonStyle styleButtonOutline = ElevatedButton.styleFrom(
-//     shape: RoundedRectangleBorder(
-//         borderRadius: BorderRadius.circular(20.0),
-//         side: BorderSide(color: colorPrimary, width: 2)),
-//     minimumSize: Size.fromHeight(40),
-//     textStyle: textStyleBody.copyWith(
-//       color: Colors.red,
-//     ),
-//     backgroundColor: Colors.transparent,
-//     elevation: 0);

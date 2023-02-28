@@ -17,7 +17,7 @@ class CTextField extends StatefulWidget {
   final Function()? onEditingComplete;
   final Function(String)? onChange;
   final Function(String)? onFieldSubmitted;
-  final String Function(String?)? validator;
+  final String? Function(String?)? validator;
   final AutovalidateMode? autoValidateMode;
   final bool? enabled;
   final Function()? onTap;

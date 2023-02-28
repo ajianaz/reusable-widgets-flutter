@@ -1,6 +1,24 @@
 import 'package:flutter/material.dart';
 import 'package:reusable_widgets_flutter/reusable_widgets_flutter.dart';
 
+OutlineInputBorder defaultBorder = OutlineInputBorder(
+  borderSide: BorderSide(color: colorPrimary, width: 2.0),
+  borderRadius: BorderRadius.circular(20),
+);
+
+InputDecoration defaultDecoration = InputDecoration(
+    hintStyle: CTextStyle.hint(),
+    hintText: "",
+    fillColor: Colors.white,
+    filled: true,
+    focusColor: Colors.white,
+    border: defaultBorder,
+    enabledBorder: defaultBorder,
+    errorBorder: defaultBorder,
+    focusedBorder: defaultBorder,
+    suffixIcon: null,
+    prefixIcon: null);
+
 class CTextFieldStyle {
   static Icon getIconEye(bool isObscure,
       {IconData? iconEye, IconData? iconEyeOff, Color? color}) {
@@ -29,7 +47,8 @@ class CTextFieldStyle {
       OutlineInputBorder? focusBorder,
       Widget? suffixIcon,
       Widget? prefixIcon}) {
-    return InputDecoration(
+
+    return defaultDecoration.copyWith(
         hintStyle: hintStyle,
         hintText: hintText,
         fillColor: fillColor,
@@ -45,18 +64,9 @@ class CTextFieldStyle {
 
   static OutlineInputBorder setDefaultBorder(
       {Color? color, double? width, BorderRadius? borderRadius}) {
-    return OutlineInputBorder(
-      borderSide:
-          BorderSide(color: color ?? colorPrimary, width: width ?? 2.0),
-      borderRadius: borderRadius ?? BorderRadius.circular(20),
+    return defaultBorder.copyWith(
+      borderSide: BorderSide(color: color ?? colorPrimary, width: width ?? 2.0),
+      borderRadius: borderRadius ?? defaultBorder.borderRadius,
     );
   }
 }
-
-// OutlineInputBorder errorBorder = OutlineInputBorder(
-//   borderSide: BorderSide(
-//     color: colorErrorRed,
-//     width: 2.0,
-//   ),
-//   borderRadius: BorderRadius.circular(30),
-// );
