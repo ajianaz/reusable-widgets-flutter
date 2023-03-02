@@ -1,11 +1,11 @@
 name: reusable_widgets_flutter
-description: A new Flutter package project.
+description: Package ini menyediakan widget-widget untuk mempermudah pengembangan aplikasi di Flutter sehingga efisiensi waktu dan biaya dapat ditingkatkan.
 version: 0.0.1
-homepage:
+homepage: https://github.com/ajianaz/reusable_widgets_flutter
 
 environment:
   sdk: '>=2.19.0 <3.0.0'
-  flutter: ">=1.17.0"
+  flutter: '>=1.17.0'
 
 dependencies:
   flutter:
