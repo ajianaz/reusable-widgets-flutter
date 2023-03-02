@@ -118,4 +118,4 @@ Contributions are always welcome!
 
 ## Feedback
 
-If you have any feedback, please reach out to us at viluvasa@gmail.com
+If you have any feedback, please reach out to us at [Discord](https://discord.gg/RGH3pJfaDv)
